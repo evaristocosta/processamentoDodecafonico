@@ -1,7 +1,7 @@
-function adaErrokFold = kfoldAda()
-[medidasR, classes] = medidas();
-classesOrg = classes;
-classes(1:19) = -1;
+function adaErrokFold = kfoldAda(medidasR,classes)
+%[medidasR, classes] = medidas();
+%classesOrg = classes;
+%classes(1:19) = -1;
 
 CVO = cvpartition(classes,'Kfold',10);
 
@@ -25,14 +25,6 @@ for i = 1:nt
            classestimate(k) = 0;
        end
     end
-    
-%    Manual error check
-%    err(i) =
-%    sum(classestimate~=classesOrg(tTreino))/length(classestimate);  
-    
-    errorAda=zeros(1,length(model)); for j=1:length(model), errorAda(j)=model(j).error; end 
-    adaboostError(i) = errorAda(length(errorAda));
-    
 end
-adaErrokFold = mean(adaboostError);
+adaErrokFold = mean(err);
 end

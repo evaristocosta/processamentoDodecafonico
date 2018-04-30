@@ -68,13 +68,22 @@ for qtde=1:27
         end 
         todosErros(i,qtde) = errorAda(length(errorAda));
         
+        adaErrokFold(i,qtde) = kfoldAda(medidasR,classes);
+        
         %Salva em arquivo      
         fileID = fopen(arq,'a');
-        errosFile = char(num2str(todosErros(i,qtde)));
+        erroDeUm = char(num2str(todosErros(i,qtde)));
+        errokFold = char(num2str(adaErrokFold(i,qtde)));
+        classeResult = char(num2str(classestimate'));
+        fprintf(fileID,'====   ');
         fprintf(fileID,queryIn);
-        fprintf(fileID,'  ==>>  ');
-        fprintf(fileID,errosFile);
-        fprintf(fileID,'\n');
+        fprintf(fileID,'   ====\nErro Singular: '); 
+        fprintf(fileID,erroDeUm);
+        fprintf(fileID,'\nErro com kFold: ');
+        fprintf(fileID,errokFold);
+        fprintf(fileID,'\nClasse Treinada: ');
+        fprintf(fileID,classeResult);
+        fprintf(fileID,'\n\n');
         fclose(fileID);
     end
 end
