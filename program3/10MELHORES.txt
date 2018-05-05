@@ -1,0 +1,33 @@
+descritivos.ec 	, 		estatisticos.mais_moda ,		gerais.intrv_maiorN   
+
+descritivos.mpp , 		descritivos.dcd ,			 	estatisticos.mais_moda   
+
+descritivos.mpp , 		estatisticos.moda , 		 	estatisticos.mais_moda   
+
+descritivos.mpp , 		estatisticos.frq_moda ,	 		gerais.intrv_maior   
+
+descritivos.mpp , 		estatisticos.mais_moda ,   		gerais.diff_intrv   
+
+descritivos.mpp , 		estatisticos.frq_modaN , 	 	gerais.intrv_maiorN   
+
+descritivos.dcd , 		estatisticos.m_artmN , 	 		estatisticos.modaN   
+
+estatisticos.m_artm , 	estatisticos.m_artmN , 			estatisticos.dsv_pN   
+
+estatisticos.m_artmN , 	estatisticos.dsv_pN , 			estatisticos.modaN   
+
+
+
+5 descritivos.mpp
+4 estatisticos.mais_moda
+3 estatisticos.m_artmN
+2 estatisticos.modaN
+2 estatisticos.dsv_pN
+2 gerais.intrv_maiorN
+1 estatisticos.frq_moda
+1 gerais.diff_intrv
+1 descritivos.ec
+1 estatisticos.frq_modaN
+1 estatisticos.m_artm
+1 estatisticos.moda
+1 gerais.intrv_maior

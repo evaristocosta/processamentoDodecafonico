@@ -1,7 +1,7 @@
 function adaErrokFold = kfoldAda(medidasR,classes)
 %[medidasR, classes] = medidas();
 %classesOrg = classes;
-%classes(1:19) = -1;
+classes(1:19) = -1;
 
 CVO = cvpartition(classes,'Kfold',10);
 

@@ -33,12 +33,13 @@ switch opt
 %         nSuper10 = HierarquicoNS(8,6);
 %         nSuper11 = HierarquicoNS(7,2);
 %         nSuper12 = HierarquicoNS(6,4);
-        nSuper13 = HierarquicoNS(6,2);
+        [nSuper13 ,~,~,cSaida,~]= HierarquicoNS(6,2);
         
         %nSupervisionados = [nSuperCorrAvg ,nSuperCosAvg ,nSuperChebWght ,nSuperCitySngl];
         nSupervisionados = nSuper13;
         nSupervisionadosErro = 1 - nSupervisionados;
-        info = nSupervisionadosErro;
+        info.erro = nSupervisionadosErro;
+        info.class = cSaida;
     case 3
         %Abordagem por máquinas de vetor suporte
         fprintf('Abordagem por máquinas de vetor suporte\n');
@@ -54,13 +55,13 @@ switch opt
     case 5
         %Abordagem por Aprendizado Aglomerativo - adaptive boost
         fprintf('Abordagem por Aprendizado Aglomerativo - adaptive boost\n');
-        [datafeatures, dataclass] = medidas();
+        [datafeatures, dataclass] = medidas('new');
         dataclass(1:19) = -1;
         [classestimate,model]=adaboost('train',datafeatures,dataclass,30);
         errorAda=zeros(1,length(model)); for i=1:length(model), errorAda(i)=model(i).error; end 
         adaboostError = errorAda(length(errorAda));
         %Validacao cruzada 
-        adaErrokFold = kfoldAda();
+        adaErrokFold = kfoldAda(datafeatures, dataclass);
         adaBoostErro = [adaboostError,adaErrokFold];
         info.class = classestimate;
         info.erro = adaBoostErro;

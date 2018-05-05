@@ -1,4 +1,4 @@
-function [accuracy,c,K,cSaida,mPA] = HierarquicoNS(dist, agr)
+function [accuracy,c,K,cSaida,mPA] = HierarquicoNS(dist, agr, medidasR, classes)
 %Medida de dist�ncia e m�todo de agrupamento
 MDist = {'euclidean','seuclidean','cityblock','minkowski','chebychev','cosine','correlation','spearman','hamming','jaccard'};
 MAgru = {'single','complete','average','weighted','centroid','median','ward'};
@@ -6,7 +6,7 @@ MAgru = {'single','complete','average','weighted','centroid','median','ward'};
 tamanhoClasses = [19 19]; 
 numClasses = size(tamanhoClasses,2);
 
-[medidasR, classes] = medidas();
+%[medidasR, classes] = medidas();
 NumClasses = max(classes) + 1;
 
 [cSaida,Z,c,I,Te] = fClusteringHierarquico(medidasR,NumClasses,MDist{dist},MAgru{agr},1); %..e grafica 0 ou 1, ultimo par�metro

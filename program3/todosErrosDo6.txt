@@ -1,0 +1,505 @@
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.frq_modaN , estatisticos.assmtrN , gerais.intrv_maior   ====
+Erro Singular: 0.18421
+Erro com kFold: 0.575
+Classe Treinada: -1 -1  1 -1 -1 -1 -1 -1 -1 -1  1 -1 -1 -1 -1 -1  1  1 -1  1 -1  1  1  1  1  1  1  1  1  1  1  1 -1  1  1  1  1 -1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.frq_modaN , estatisticos.assmtrN , gerais.intrv_menor   ====
+Erro Singular: 0.26316
+Erro com kFold: 0.63333
+Classe Treinada: -1  1 -1 -1  1 -1 -1 -1  1 -1  1 -1 -1 -1 -1 -1  1  1 -1  1  1 -1  1  1  1  1  1  1  1  1  1 -1  1 -1  1  1  1 -1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.frq_modaN , estatisticos.assmtrN , gerais.diff_intrv   ====
+Erro Singular: 0.21053
+Erro com kFold: 0.58333
+Classe Treinada: -1 -1 -1 -1  1  1 -1 -1 -1 -1  1 -1 -1  1  1 -1 -1  1 -1  1  1  1  1  1  1  1  1  1  1  1  1  1  1 -1  1  1  1 -1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.frq_modaN , estatisticos.assmtrN , gerais.intrv_maiorN   ====
+Erro Singular: 0.21053
+Erro com kFold: 0.53333
+Classe Treinada: -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  1 -1  1 -1 -1  1  1 -1 -1 -1  1  1  1  1  1  1  1  1 -1 -1  1  1  1 -1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.frq_modaN , estatisticos.assmtrN , gerais.diffFL   ====
+Erro Singular: 0.18421
+Erro com kFold: 0.60833
+Classe Treinada: -1  1 -1 -1  1 -1 -1 -1  1 -1 -1 -1 -1 -1 -1 -1 -1  1 -1  1  1 -1  1  1  1  1  1  1  1  1  1  1  1 -1  1  1  1 -1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.frq_modaN , estatisticos.m_ponderada , estatisticos.desv_p_ponderado   ====
+Erro Singular: 0.078947
+Erro com kFold: 0.55833
+Classe Treinada: -1 -1 -1 -1  1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  1 -1 -1  1  1  1  1 -1  1  1  1  1  1  1  1  1  1  1  1  1  1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.frq_modaN , estatisticos.m_ponderada , gerais.intrv_maior   ====
+Erro Singular: 0.052632
+Erro com kFold: 0.58333
+Classe Treinada: -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  1 -1  1  1  1  1  1  1  1  1  1  1  1  1  1 -1  1  1  1  1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.frq_modaN , estatisticos.m_ponderada , gerais.intrv_menor   ====
+Erro Singular: 0.10526
+Erro com kFold: 0.65
+Classe Treinada: -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  1 -1  1  1  1  1  1  1  1  1  1 -1  1  1 -1 -1  1  1  1  1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.frq_modaN , estatisticos.m_ponderada , gerais.diff_intrv   ====
+Erro Singular: 0.052632
+Erro com kFold: 0.46667
+Classe Treinada: -1 -1 -1 -1  1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  1  1  1  1 -1  1  1  1  1  1  1  1  1  1  1  1  1  1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.frq_modaN , estatisticos.m_ponderada , gerais.intrv_maiorN   ====
+Erro Singular: 0.078947
+Erro com kFold: 0.49167
+Classe Treinada: -1 -1 -1 -1  1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  1 -1  1  1  1  1  1  1  1  1  1  1  1 -1  1  1  1  1  1  1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.frq_modaN , estatisticos.m_ponderada , gerais.diffFL   ====
+Erro Singular: 0.078947
+Erro com kFold: 0.5
+Classe Treinada: -1 -1 -1 -1  1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  1 -1  1  1  1  1  1  1  1  1  1  1  1  1 -1  1  1  1  1  1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.frq_modaN , estatisticos.desv_p_ponderado , gerais.intrv_maior   ====
+Erro Singular: 0.13158
+Erro com kFold: 0.55833
+Classe Treinada: -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  1 -1  1 -1 -1  1 -1  1  1 -1  1  1  1  1  1  1  1  1 -1  1  1  1  1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.frq_modaN , estatisticos.desv_p_ponderado , gerais.intrv_menor   ====
+Erro Singular: 0.10526
+Erro com kFold: 0.53333
+Classe Treinada: -1 -1 -1 -1  1 -1 -1 -1  1 -1 -1 -1 -1 -1 -1 -1  1  1 -1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.frq_modaN , estatisticos.desv_p_ponderado , gerais.diff_intrv   ====
+Erro Singular: 0.078947
+Erro com kFold: 0.51667
+Classe Treinada: -1 -1 -1 -1  1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  1 -1 -1  1  1  1  1 -1  1  1  1  1  1  1  1  1  1  1  1  1  1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.frq_modaN , estatisticos.desv_p_ponderado , gerais.intrv_maiorN   ====
+Erro Singular: 0.10526
+Erro com kFold: 0.40833
+Classe Treinada: -1 -1 -1 -1  1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  1  1 -1  1  1  1 -1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.frq_modaN , estatisticos.desv_p_ponderado , gerais.diffFL   ====
+Erro Singular: 0.13158
+Erro com kFold: 0.55833
+Classe Treinada: -1 -1 -1 -1  1 -1 -1 -1 -1 -1 -1 -1 -1 -1  1 -1  1 -1 -1  1  1  1  1 -1  1  1  1  1  1  1  1  1  1 -1  1  1  1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.frq_modaN , gerais.intrv_maior , gerais.intrv_menor   ====
+Erro Singular: 0.26316
+Erro com kFold: 0.475
+Classe Treinada: -1 -1  1 -1  1  1 -1 -1  1 -1 -1 -1 -1 -1  1 -1  1  1 -1  1 -1  1  1  1  1  1  1  1  1 -1  1  1  1  1  1  1  1 -1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.frq_modaN , gerais.intrv_maior , gerais.diff_intrv   ====
+Erro Singular: 0.13158
+Erro com kFold: 0.58333
+Classe Treinada: -1 -1 -1 -1  1  1 -1 -1 -1 -1 -1 -1 -1 -1  1 -1 -1  1 -1  1  1  1  1  1  1  1  1  1 -1  1  1  1  1  1  1  1  1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.frq_modaN , gerais.intrv_maior , gerais.intrv_maiorN   ====
+Erro Singular: 0.18421
+Erro com kFold: 0.475
+Classe Treinada: -1 -1 -1 -1  1  1 -1 -1 -1 -1 -1 -1 -1 -1  1 -1  1  1 -1  1 -1  1 -1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.frq_modaN , gerais.intrv_maior , gerais.diffFL   ====
+Erro Singular: 0.13158
+Erro com kFold: 0.44167
+Classe Treinada: -1  1 -1 -1  1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  1 -1  1  1  1  1  1  1  1  1  1 -1 -1  1  1  1  1  1  1  1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.frq_modaN , gerais.intrv_menor , gerais.diff_intrv   ====
+Erro Singular: 0.18421
+Erro com kFold: 0.54167
+Classe Treinada: -1 -1 -1 -1 -1  1 -1 -1  1 -1  1 -1 -1 -1 -1 -1 -1  1 -1  1  1  1  1  1 -1  1  1  1 -1  1  1  1 -1  1  1  1  1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.frq_modaN , gerais.intrv_menor , gerais.intrv_maiorN   ====
+Erro Singular: 0.15789
+Erro com kFold: 0.50833
+Classe Treinada: -1 -1  1 -1  1  1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  1  1 -1  1  1  1  1  1  1  1  1  1  1  1  1 -1  1  1  1  1  1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.frq_modaN , gerais.intrv_menor , gerais.diffFL   ====
+Erro Singular: 0.10526
+Erro com kFold: 0.60833
+Classe Treinada: -1 -1 -1 -1  1 -1 -1 -1  1 -1 -1 -1 -1 -1 -1 -1 -1  1 -1  1  1  1  1  1  1  1  1  1  1  1  1 -1  1  1  1  1  1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.frq_modaN , gerais.diff_intrv , gerais.intrv_maiorN   ====
+Erro Singular: 0.15789
+Erro com kFold: 0.45833
+Classe Treinada: -1 -1  1 -1  1  1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  1  1 -1  1  1  1  1  1  1  1  1  1  1  1  1  1  1 -1  1  1  1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.frq_modaN , gerais.diff_intrv , gerais.diffFL   ====
+Erro Singular: 0.13158
+Erro com kFold: 0.5
+Classe Treinada: -1 -1 -1 -1  1 -1 -1 -1 -1 -1 -1 -1 -1 -1  1 -1 -1  1 -1  1  1  1  1  1  1  1 -1  1 -1  1  1  1  1  1  1  1  1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.frq_modaN , gerais.intrv_maiorN , gerais.diffFL   ====
+Erro Singular: 0.13158
+Erro com kFold: 0.46667
+Classe Treinada: -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  1 -1 -1  1 -1  1  1 -1  1  1  1  1  1  1  1  1  1  1 -1 -1  1  1  1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.mais_modaN , estatisticos.assmtrN , estatisticos.m_ponderada   ====
+Erro Singular: 0.078947
+Erro com kFold: 0.55
+Classe Treinada: -1  1 -1 -1  1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  1 -1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.mais_modaN , estatisticos.assmtrN , estatisticos.desv_p_ponderado   ====
+Erro Singular: 0.15789
+Erro com kFold: 0.525
+Classe Treinada: -1 -1 -1 -1  1 -1 -1 -1 -1 -1 -1 -1 -1 -1  1 -1  1  1 -1  1 -1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1 -1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.mais_modaN , estatisticos.assmtrN , gerais.intrv_maior   ====
+Erro Singular: 0.26316
+Erro com kFold: 0.525
+Classe Treinada: -1  1 -1 -1  1 -1 -1 -1 -1 -1  1 -1 -1 -1  1 -1  1  1 -1  1 -1 -1  1  1  1  1  1  1  1  1  1 -1  1  1  1  1  1 -1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.mais_modaN , estatisticos.assmtrN , gerais.intrv_menor   ====
+Erro Singular: 0.26316
+Erro com kFold: 0.79167
+Classe Treinada: -1  1 -1 -1  1 -1 -1 -1  1 -1  1 -1 -1  1 -1 -1 -1  1 -1  1  1 -1  1  1  1  1  1  1  1  1  1 -1  1 -1  1  1  1 -1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.mais_modaN , estatisticos.assmtrN , gerais.diff_intrv   ====
+Erro Singular: 0.21053
+Erro com kFold: 0.58333
+Classe Treinada: -1 -1 -1 -1  1 -1 -1 -1 -1 -1  1 -1 -1  1 -1 -1  1 -1 -1  1  1 -1  1 -1  1  1  1  1  1  1  1  1  1 -1  1  1  1 -1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.mais_modaN , estatisticos.assmtrN , gerais.intrv_maiorN   ====
+Erro Singular: 0.18421
+Erro com kFold: 0.44167
+Classe Treinada: -1 -1 -1 -1  1 -1 -1 -1 -1 -1 -1 -1 -1 -1  1 -1  1  1 -1  1  1 -1  1  1  1  1  1  1  1  1  1  1  1 -1  1  1  1 -1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.mais_modaN , estatisticos.assmtrN , gerais.diffFL   ====
+Erro Singular: 0.23684
+Erro com kFold: 0.58333
+Classe Treinada: -1  1 -1 -1  1 -1 -1 -1  1 -1 -1 -1 -1  1 -1 -1 -1  1 -1  1  1 -1  1  1  1  1  1  1  1 -1  1  1  1 -1  1  1  1 -1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.mais_modaN , estatisticos.m_ponderada , estatisticos.desv_p_ponderado   ====
+Erro Singular: 0.078947
+Erro com kFold: 0.4
+Classe Treinada: -1 -1 -1 -1  1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  1 -1 -1  1  1  1  1 -1  1  1  1  1  1  1  1  1  1  1  1  1  1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.mais_modaN , estatisticos.m_ponderada , gerais.intrv_maior   ====
+Erro Singular: 0.078947
+Erro com kFold: 0.5
+Classe Treinada: -1 -1 -1 -1  1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  1 -1  1  1  1  1  1  1  1  1  1  1 -1  1  1  1  1  1  1  1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.mais_modaN , estatisticos.m_ponderada , gerais.intrv_menor   ====
+Erro Singular: 0.13158
+Erro com kFold: 0.53333
+Classe Treinada: -1 -1 -1 -1 -1 -1 -1 -1  1  1 -1 -1 -1 -1 -1 -1 -1  1 -1  1  1  1  1  1  1  1  1  1  1  1  1 -1 -1  1  1  1  1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.mais_modaN , estatisticos.m_ponderada , gerais.diff_intrv   ====
+Erro Singular: 0.078947
+Erro com kFold: 0.6
+Classe Treinada: -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  1  1  1  1 -1 -1  1  1  1  1  1  1  1 -1  1  1  1  1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.mais_modaN , estatisticos.m_ponderada , gerais.intrv_maiorN   ====
+Erro Singular: 0.078947
+Erro com kFold: 0.6
+Classe Treinada: -1 -1 -1 -1  1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  1 -1 -1  1  1  1  1 -1  1  1  1  1  1  1  1  1  1  1  1  1  1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.mais_modaN , estatisticos.m_ponderada , gerais.diffFL   ====
+Erro Singular: 0.10526
+Erro com kFold: 0.53333
+Classe Treinada: -1 -1 -1 -1  1 -1 -1 -1  1 -1 -1 -1 -1 -1 -1 -1 -1  1 -1  1  1  1  1  1  1  1  1  1  1  1  1 -1  1  1  1  1  1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.mais_modaN , estatisticos.desv_p_ponderado , gerais.intrv_maior   ====
+Erro Singular: 0.15789
+Erro com kFold: 0.54167
+Classe Treinada: -1 -1 -1 -1 -1  1 -1 -1 -1 -1 -1 -1 -1 -1  1 -1  1  1 -1  1 -1  1  1  1  1  1  1  1  1  1  1  1 -1  1  1  1  1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.mais_modaN , estatisticos.desv_p_ponderado , gerais.intrv_menor   ====
+Erro Singular: 0.18421
+Erro com kFold: 0.58333
+Classe Treinada: -1 -1 -1 -1  1 -1 -1 -1  1 -1 -1 -1 -1 -1 -1 -1  1  1 -1  1 -1  1  1  1 -1  1  1  1  1  1  1  1  1  1  1  1  1 -1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.mais_modaN , estatisticos.desv_p_ponderado , gerais.diff_intrv   ====
+Erro Singular: 0.13158
+Erro com kFold: 0.49167
+Classe Treinada: -1 -1 -1 -1  1 -1 -1 -1 -1 -1 -1 -1 -1 -1  1 -1  1  1 -1  1 -1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.mais_modaN , estatisticos.desv_p_ponderado , gerais.intrv_maiorN   ====
+Erro Singular: 0.15789
+Erro com kFold: 0.41667
+Classe Treinada: -1 -1 -1 -1  1 -1 -1 -1 -1 -1 -1 -1 -1 -1  1 -1  1  1 -1  1 -1  1 -1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.mais_modaN , estatisticos.desv_p_ponderado , gerais.diffFL   ====
+Erro Singular: 0.10526
+Erro com kFold: 0.60833
+Classe Treinada: -1 -1 -1 -1  1 -1 -1 -1 -1 -1 -1 -1 -1 -1  1 -1  1  1 -1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.mais_modaN , gerais.intrv_maior , gerais.intrv_menor   ====
+Erro Singular: 0.26316
+Erro com kFold: 0.45833
+Classe Treinada: 1 -1  1 -1  1  1 -1 -1 -1 -1 -1 -1 -1 -1  1 -1 -1  1 -1  1 -1  1  1  1  1  1  1  1  1 -1  1 -1  1  1  1  1  1 -1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.mais_modaN , gerais.intrv_maior , gerais.diff_intrv   ====
+Erro Singular: 0.13158
+Erro com kFold: 0.54167
+Classe Treinada: -1 -1  1 -1  1 -1 -1 -1 -1 -1 -1 -1 -1 -1  1 -1 -1  1 -1  1  1 -1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.mais_modaN , gerais.intrv_maior , gerais.intrv_maiorN   ====
+Erro Singular: 0.23684
+Erro com kFold: 0.54167
+Classe Treinada: 1 -1  1 -1 -1  1 -1 -1 -1 -1 -1 -1 -1 -1  1 -1 -1  1 -1  1 -1  1 -1  1  1  1  1  1  1  1  1 -1 -1  1  1  1  1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.mais_modaN , gerais.intrv_maior , gerais.diffFL   ====
+Erro Singular: 0.13158
+Erro com kFold: 0.45
+Classe Treinada: -1  1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  1 -1 -1  1 -1  1  1  1  1  1  1  1  1  1  1 -1  1  1 -1  1  1  1  1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.mais_modaN , gerais.intrv_menor , gerais.diff_intrv   ====
+Erro Singular: 0.21053
+Erro com kFold: 0.55
+Classe Treinada: 1 -1 -1 -1 -1  1 -1 -1  1 -1 -1 -1 -1 -1 -1 -1 -1  1 -1  1  1  1  1  1 -1  1  1  1 -1  1  1  1 -1  1  1  1  1 -1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.mais_modaN , gerais.intrv_menor , gerais.intrv_maiorN   ====
+Erro Singular: 0.21053
+Erro com kFold: 0.475
+Classe Treinada: -1 -1  1 -1  1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  1  1 -1  1 -1 -1 -1  1  1  1  1  1  1  1 -1  1  1  1  1  1  1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.mais_modaN , gerais.intrv_menor , gerais.diffFL   ====
+Erro Singular: 0.21053
+Erro com kFold: 0.61667
+Classe Treinada: -1 -1 -1 -1  1 -1 -1 -1  1 -1 -1 -1 -1 -1 -1 -1 -1  1 -1  1  1 -1  1  1  1  1 -1  1  1  1 -1 -1  1  1  1  1 -1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.mais_modaN , gerais.diff_intrv , gerais.intrv_maiorN   ====
+Erro Singular: 0.18421
+Erro com kFold: 0.575
+Classe Treinada: -1 -1 -1 -1  1  1 -1 -1 -1 -1 -1 -1 -1 -1  1 -1  1  1 -1  1  1 -1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1 -1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.mais_modaN , gerais.diff_intrv , gerais.diffFL   ====
+Erro Singular: 0.18421
+Erro com kFold: 0.525
+Classe Treinada: -1 -1 -1 -1  1  1 -1  1 -1 -1 -1 -1 -1 -1  1 -1 -1 -1 -1  1  1  1  1 -1  1  1 -1  1  1  1  1  1  1  1  1  1 -1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.mais_modaN , gerais.intrv_maiorN , gerais.diffFL   ====
+Erro Singular: 0.13158
+Erro com kFold: 0.45
+Classe Treinada: -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  1 -1 -1  1 -1  1  1 -1  1  1  1  1  1  1  1  1  1  1 -1 -1  1  1  1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.assmtrN , estatisticos.m_ponderada , estatisticos.desv_p_ponderado   ====
+Erro Singular: 0.052632
+Erro com kFold: 0.58333
+Classe Treinada: -1 -1 -1 -1  1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  1  1  1  1 -1  1  1  1  1  1  1  1  1  1  1  1  1  1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.assmtrN , estatisticos.m_ponderada , gerais.intrv_maior   ====
+Erro Singular: 0.052632
+Erro com kFold: 0.45833
+Classe Treinada: -1 -1 -1 -1  1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  1 -1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.assmtrN , estatisticos.m_ponderada , gerais.intrv_menor   ====
+Erro Singular: 0.078947
+Erro com kFold: 0.625
+Classe Treinada: -1 -1 -1 -1  1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  1 -1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1 -1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.assmtrN , estatisticos.m_ponderada , gerais.diff_intrv   ====
+Erro Singular: 0.052632
+Erro com kFold: 0.6
+Classe Treinada: -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  1 -1  1  1  1  1  1  1  1  1  1  1  1  1  1 -1  1  1  1  1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.assmtrN , estatisticos.m_ponderada , gerais.intrv_maiorN   ====
+Erro Singular: 0.10526
+Erro com kFold: 0.58333
+Classe Treinada: -1 -1 -1 -1  1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  1  1 -1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1 -1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.assmtrN , estatisticos.m_ponderada , gerais.diffFL   ====
+Erro Singular: 0.078947
+Erro com kFold: 0.50833
+Classe Treinada: -1 -1 -1  1  1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  1 -1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.assmtrN , estatisticos.desv_p_ponderado , gerais.intrv_maior   ====
+Erro Singular: 0.13158
+Erro com kFold: 0.575
+Classe Treinada: -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  1 -1  1 -1 -1  1 -1  1  1 -1  1  1  1  1  1  1  1  1 -1  1  1  1  1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.assmtrN , estatisticos.desv_p_ponderado , gerais.intrv_menor   ====
+Erro Singular: 0.15789
+Erro com kFold: 0.55
+Classe Treinada: -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  1 -1  1  1 -1  1  1  1  1  1  1  1  1  1  1  1  1  1 -1 -1  1  1  1 -1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.assmtrN , estatisticos.desv_p_ponderado , gerais.diff_intrv   ====
+Erro Singular: 0.15789
+Erro com kFold: 0.53333
+Classe Treinada: -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  1 -1  1 -1 -1  1  1  1  1 -1  1  1  1  1  1  1  1  1 -1 -1  1  1  1 -1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.assmtrN , estatisticos.desv_p_ponderado , gerais.intrv_maiorN   ====
+Erro Singular: 0.13158
+Erro com kFold: 0.48333
+Classe Treinada: -1 -1 -1 -1  1 -1 -1 -1 -1 -1 -1 -1 -1 -1  1 -1  1  1 -1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1 -1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.assmtrN , estatisticos.desv_p_ponderado , gerais.diffFL   ====
+Erro Singular: 0.15789
+Erro com kFold: 0.54167
+Classe Treinada: -1 -1 -1 -1  1 -1 -1 -1 -1 -1 -1 -1 -1 -1  1 -1  1 -1 -1  1  1  1  1 -1  1  1  1  1  1  1  1  1  1 -1  1  1  1 -1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.assmtrN , gerais.intrv_maior , gerais.intrv_menor   ====
+Erro Singular: 0.15789
+Erro com kFold: 0.575
+Classe Treinada: -1 -1  1 -1  1 -1 -1 -1  1 -1 -1 -1 -1 -1 -1 -1 -1  1 -1  1  1  1  1  1  1  1  1  1  1 -1  1  1  1  1  1  1  1 -1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.assmtrN , gerais.intrv_maior , gerais.diff_intrv   ====
+Erro Singular: 0.18421
+Erro com kFold: 0.54167
+Classe Treinada: -1 -1  1 -1  1 -1 -1 -1 -1 -1 -1 -1 -1 -1  1 -1  1  1 -1  1  1 -1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1 -1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.assmtrN , gerais.intrv_maior , gerais.intrv_maiorN   ====
+Erro Singular: 0.18421
+Erro com kFold: 0.55
+Classe Treinada: -1 -1  1 -1 -1 -1 -1 -1 -1 -1  1 -1 -1 -1  1 -1  1  1 -1  1  1  1  1  1  1  1  1  1  1  1  1  1 -1  1  1  1  1 -1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.assmtrN , gerais.intrv_maior , gerais.diffFL   ====
+Erro Singular: 0.13158
+Erro com kFold: 0.60833
+Classe Treinada: -1  1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  1 -1 -1 -1 -1  1  1  1  1 -1  1  1  1  1  1  1  1  1 -1  1  1  1  1 -1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.assmtrN , gerais.intrv_menor , gerais.diff_intrv   ====
+Erro Singular: 0.21053
+Erro com kFold: 0.55
+Classe Treinada: -1 -1 -1 -1  1 -1 -1 -1 -1 -1  1 -1 -1 -1  1 -1  1  1 -1  1  1 -1  1  1  1  1  1  1  1  1  1  1  1 -1  1  1  1 -1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.assmtrN , gerais.intrv_menor , gerais.intrv_maiorN   ====
+Erro Singular: 0.18421
+Erro com kFold: 0.65
+Classe Treinada: -1 -1  1 -1  1 -1 -1 -1  1 -1 -1 -1 -1 -1 -1 -1 -1  1 -1  1  1 -1  1  1  1  1  1  1  1  1  1 -1  1  1  1  1  1 -1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.assmtrN , gerais.intrv_menor , gerais.diffFL   ====
+Erro Singular: 0.13158
+Erro com kFold: 0.65833
+Classe Treinada: -1 -1 -1 -1  1 -1 -1 -1  1 -1 -1 -1 -1 -1 -1 -1 -1  1 -1  1  1 -1  1  1  1  1  1  1  1 -1  1  1  1  1  1  1  1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.assmtrN , gerais.diff_intrv , gerais.intrv_maiorN   ====
+Erro Singular: 0.26316
+Erro com kFold: 0.65
+Classe Treinada: -1 -1  1 -1 -1  1 -1 -1 -1 -1 -1 -1 -1 -1  1 -1  1  1 -1  1  1 -1 -1  1  1  1  1  1  1  1  1  1 -1 -1  1  1  1 -1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.assmtrN , gerais.diff_intrv , gerais.diffFL   ====
+Erro Singular: 0.10526
+Erro com kFold: 0.60833
+Classe Treinada: -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  1 -1 -1  1 -1  1  1 -1  1  1  1  1  1  1  1  1  1  1 -1  1  1  1  1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.assmtrN , gerais.intrv_maiorN , gerais.diffFL   ====
+Erro Singular: 0.18421
+Erro com kFold: 0.58333
+Classe Treinada: -1 -1 -1 -1  1 -1 -1 -1  1 -1 -1 -1 -1  1  1 -1 -1  1 -1  1  1 -1  1  1  1  1  1  1  1  1  1  1  1 -1  1  1  1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.m_ponderada , estatisticos.desv_p_ponderado , gerais.intrv_maior   ====
+Erro Singular: 0.078947
+Erro com kFold: 0.49167
+Classe Treinada: -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  1 -1 -1  1 -1  1  1  1  1  1  1  1  1  1  1  1  1  1 -1  1  1  1  1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.m_ponderada , estatisticos.desv_p_ponderado , gerais.intrv_menor   ====
+Erro Singular: 0.078947
+Erro com kFold: 0.50833
+Classe Treinada: -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  1 -1 -1  1  1  1  1 -1  1  1  1  1  1  1  1  1 -1  1  1  1  1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.m_ponderada , estatisticos.desv_p_ponderado , gerais.diff_intrv   ====
+Erro Singular: 0.078947
+Erro com kFold: 0.56667
+Classe Treinada: -1 -1 -1 -1  1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  1 -1 -1  1  1  1  1 -1  1  1  1  1  1  1  1  1  1  1  1  1  1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.m_ponderada , estatisticos.desv_p_ponderado , gerais.intrv_maiorN   ====
+Erro Singular: 0.078947
+Erro com kFold: 0.55833
+Classe Treinada: -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  1 -1 -1  1  1  1  1 -1  1  1  1  1  1  1  1  1 -1  1  1  1  1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.m_ponderada , estatisticos.desv_p_ponderado , gerais.diffFL   ====
+Erro Singular: 0.10526
+Erro com kFold: 0.44167
+Classe Treinada: -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  1 -1 -1 -1 -1  1  1  1  1 -1  1  1  1  1  1  1  1  1 -1 -1  1  1  1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.m_ponderada , gerais.intrv_maior , gerais.intrv_menor   ====
+Erro Singular: 0.078947
+Erro com kFold: 0.49167
+Classe Treinada: -1 -1 -1 -1  1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  1 -1  1  1  1  1  1  1  1  1  1  1 -1  1  1  1  1  1  1  1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.m_ponderada , gerais.intrv_maior , gerais.diff_intrv   ====
+Erro Singular: 0.052632
+Erro com kFold: 0.5
+Classe Treinada: -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  1 -1  1  1  1  1  1  1  1  1  1  1  1  1  1 -1  1  1  1  1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.m_ponderada , gerais.intrv_maior , gerais.intrv_maiorN   ====
+Erro Singular: 0.10526
+Erro com kFold: 0.60833
+Classe Treinada: -1 -1 -1 -1  1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  1  1 -1  1  1  1  1  1  1  1  1  1  1  1  1 -1  1  1  1  1  1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.m_ponderada , gerais.intrv_maior , gerais.diffFL   ====
+Erro Singular: 0.052632
+Erro com kFold: 0.59167
+Classe Treinada: -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  1 -1  1  1  1  1  1  1  1  1  1  1  1  1  1 -1  1  1  1  1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.m_ponderada , gerais.intrv_menor , gerais.diff_intrv   ====
+Erro Singular: 0.15789
+Erro com kFold: 0.575
+Classe Treinada: -1 -1 -1 -1  1 -1 -1 -1 -1  1  1 -1 -1 -1 -1 -1 -1  1 -1  1  1  1  1  1 -1  1  1  1  1  1  1 -1  1  1  1  1  1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.m_ponderada , gerais.intrv_menor , gerais.intrv_maiorN   ====
+Erro Singular: 0.078947
+Erro com kFold: 0.56667
+Classe Treinada: -1 -1 -1 -1  1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  1  1 -1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.m_ponderada , gerais.intrv_menor , gerais.diffFL   ====
+Erro Singular: 0.15789
+Erro com kFold: 0.60833
+Classe Treinada: -1 -1 -1  1  1 -1 -1 -1  1  1 -1 -1 -1 -1 -1 -1 -1  1 -1  1  1  1  1  1  1  1  1  1  1  1  1 -1  1  1  1  1  1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.m_ponderada , gerais.diff_intrv , gerais.intrv_maiorN   ====
+Erro Singular: 0.10526
+Erro com kFold: 0.55
+Classe Treinada: -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  1 -1 -1  1  1  1  1 -1  1 -1  1  1  1  1  1  1 -1  1  1  1  1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.m_ponderada , gerais.diff_intrv , gerais.diffFL   ====
+Erro Singular: 0.10526
+Erro com kFold: 0.7
+Classe Treinada: -1 -1 -1  1  1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  1 -1  1  1  1  1  1  1  1  1  1  1  1  1 -1  1  1  1  1  1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.m_ponderada , gerais.intrv_maiorN , gerais.diffFL   ====
+Erro Singular: 0.078947
+Erro com kFold: 0.55
+Classe Treinada: -1 -1 -1  1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  1  1  1  1 -1  1  1  1  1  1  1  1  1 -1  1  1  1  1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.desv_p_ponderado , gerais.intrv_maiorN , gerais.diffFL   ====
+Erro Singular: 0.078947
+Erro com kFold: 0.40833
+Classe Treinada: -1 -1 -1 -1  1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  1  1 -1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.desv_p_ponderado , gerais.diff_intrv , gerais.diffFL   ====
+Erro Singular: 0.10526
+Erro com kFold: 0.51667
+Classe Treinada: -1 -1 -1 -1  1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  1  1 -1  1  1  1  1  1  1  1  1  1  1  1  1  1  1 -1  1  1  1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.desv_p_ponderado , gerais.diff_intrv , gerais.intrv_maiorN   ====
+Erro Singular: 0.15789
+Erro com kFold: 0.58333
+Classe Treinada: -1 -1 -1 -1  1 -1 -1 -1 -1 -1 -1 -1 -1 -1  1 -1  1  1 -1  1  1  1 -1  1  1  1 -1  1  1  1  1  1  1  1  1  1  1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.desv_p_ponderado , gerais.intrv_menor , gerais.diffFL   ====
+Erro Singular: 0.078947
+Erro com kFold: 0.46667
+Classe Treinada: -1 -1 -1 -1  1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  1  1  1  1 -1  1  1  1  1 -1  1  1  1  1  1  1  1  1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.desv_p_ponderado , gerais.intrv_menor , gerais.intrv_maiorN   ====
+Erro Singular: 0.13158
+Erro com kFold: 0.45833
+Classe Treinada: -1 -1 -1 -1  1 -1 -1 -1 -1 -1 -1 -1 -1 -1  1 -1  1  1 -1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1 -1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.desv_p_ponderado , gerais.intrv_menor , gerais.diff_intrv   ====
+Erro Singular: 0.21053
+Erro com kFold: 0.55
+Classe Treinada: -1 -1 -1 -1  1 -1 -1 -1  1 -1 -1 -1 -1 -1  1 -1  1  1 -1  1 -1  1  1  1 -1  1  1  1  1  1  1  1  1  1  1  1  1 -1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.desv_p_ponderado , gerais.intrv_maior , gerais.diffFL   ====
+Erro Singular: 0.052632
+Erro com kFold: 0.55833
+Classe Treinada: -1 -1 -1 -1  1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  1  1  1  1 -1  1  1  1  1  1  1  1  1  1  1  1  1  1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.desv_p_ponderado , gerais.intrv_maior , gerais.intrv_maiorN   ====
+Erro Singular: 0.13158
+Erro com kFold: 0.41667
+Classe Treinada: -1 -1 -1 -1  1 -1 -1 -1 -1 -1 -1 -1 -1 -1  1 -1  1  1 -1  1  1  1 -1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.desv_p_ponderado , gerais.intrv_maior , gerais.diff_intrv   ====
+Erro Singular: 0.10526
+Erro com kFold: 0.49167
+Classe Treinada: -1 -1 -1 -1  1 -1 -1 -1 -1 -1 -1 -1 -1 -1  1 -1  1  1 -1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , estatisticos.desv_p_ponderado , gerais.intrv_maior , gerais.intrv_menor   ====
+Erro Singular: 0.15789
+Erro com kFold: 0.55
+Classe Treinada: -1 -1 -1 -1  1 -1 -1 -1  1 -1 -1 -1 -1 -1  1 -1  1  1 -1  1 -1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1
+
+====     descritivos.id , descritivos.lr , estatisticos.frq_moda , gerais.intrv_maior , gerais.intrv_maiorN , gerais.diffFL   ====
+Erro Singular: 0.078947
+Erro com kFold: 0.475
+Classe Treinada: -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  1 -1 -1  1 -1  1  1  1  1  1  1  1  1  1  1  1  1  1 -1  1  1  1  1  1
+

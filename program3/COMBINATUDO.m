@@ -1,4 +1,4 @@
-function todosErros = COMBINATUDO()
+function [todosErros, adaErrokFold] = COMBINATUDO()
 addpath('adaboost/');
 
 %Set preferences with setdbprefs.
@@ -10,7 +10,7 @@ setdbprefs('NullStringRead', 'null');
 %Using JDBC driver.
 conn = database('dodecaf', 'root', '746136', 'Vendor', 'MYSQL', 'Server', 'localhost', 'PortNumber', 3306);
 
-arq = 'todosErros.txt';
+arq = 'todosErrosDo12Invertido.txt';
 
 %Vetor de classes
 tamanhoClasses = [19 19]; 
@@ -32,59 +32,111 @@ queryCell = {' , descritivos.id',' , descritivos.ec',' , descritivos.ecp',' , de
     ' , gerais.intrv_maior',' , gerais.intrv_menor',' , gerais.diff_intrv',' , gerais.intrv_maiorN',' , gerais.diffFL'};
 queryStr = string(queryCell);
 
-for qtde=1:27
+for qtde=12:27
     c = combnk(comb,qtde);
     [prof,tam] = size(c);
-    
-    for i=1:prof
-        query = ' ';
-        for j=1:tam
-            query=strcat(query,queryStr(c(i,j)));
+    if qtde == 4
+        for i=5277:prof
+            query = ' ';
+            for j=1:tam
+                query=strcat(query,queryStr(c(i,j)));
+            end
+
+            queryIn = char(query);
+            queryIn(2) = [];
+            curs = exec(conn, ['SELECT' queryIn ' FROM   (  (  ( `dodecaf`.descritivos '...
+            ' INNER JOIN `dodecaf`.gerais '...
+            ' ON 	descritivos.num = gerais.num )'...
+            ' INNER JOIN `dodecaf`.estatisticos '...
+            ' ON 	descritivos.num = estatisticos.num )'...
+            ' INNER JOIN `dodecaf`.everything '...
+            ' ON 	descritivos.num = everything.num )'...
+            ' WHERE 	everything.compositor LIKE ''Arnold%'''...
+            ' OR 	everything.compositor LIKE ''Igor%''']);
+
+            curs = fetch(curs);
+            close(curs);
+
+            %Assign data to output variable
+            medidasR = curs.Data;
+
+
+            [classestimate,model]=adaboost('train',medidasR,classes,30);
+            errorAda=zeros(1,length(model)); 
+            for x=1:length(model)
+                errorAda(x)=model(x).error; 
+            end 
+            todosErros(i,qtde) = errorAda(length(errorAda));
+
+            adaErrokFold(i,qtde) = kfoldAda(medidasR,classes);
+
+            %Salva em arquivo      
+            fileID = fopen(arq,'a');
+            erroDeUm = char(num2str(todosErros(i,qtde)));
+            errokFold = char(num2str(adaErrokFold(i,qtde)));
+            classeResult = char(num2str(classestimate'));
+            fprintf(fileID,'====   ');
+            fprintf(fileID,queryIn);
+            fprintf(fileID,'   ====\nErro Singular: '); 
+            fprintf(fileID,erroDeUm);
+            fprintf(fileID,'\nErro com kFold: ');
+            fprintf(fileID,errokFold);
+            fprintf(fileID,'\nClasse Treinada: ');
+            fprintf(fileID,classeResult);
+            fprintf(fileID,'\n\n');
+            fclose(fileID);
         end
-        
-        queryIn = char(query);
-        queryIn(2) = [];
-        curs = exec(conn, ['SELECT' queryIn ' FROM   (  (  ( `dodecaf`.descritivos '...
-        ' INNER JOIN `dodecaf`.gerais '...
-        ' ON 	descritivos.num = gerais.num )'...
-        ' INNER JOIN `dodecaf`.estatisticos '...
-        ' ON 	descritivos.num = estatisticos.num )'...
-        ' INNER JOIN `dodecaf`.everything '...
-        ' ON 	descritivos.num = everything.num )'...
-        ' WHERE 	everything.compositor LIKE ''Arnold%'''...
-        ' OR 	everything.compositor LIKE ''Igor%''']);
+    else
+        for i=prof:-1:1721
+            query = ' ';
+            for j=1:tam
+                query=strcat(query,queryStr(c(i,j)));
+            end
 
-        curs = fetch(curs);
-        close(curs);
+            queryIn = char(query);
+            queryIn(2) = [];
+            curs = exec(conn, ['SELECT' queryIn ' FROM   (  (  ( `dodecaf`.descritivos '...
+            ' INNER JOIN `dodecaf`.gerais '...
+            ' ON 	descritivos.num = gerais.num )'...
+            ' INNER JOIN `dodecaf`.estatisticos '...
+            ' ON 	descritivos.num = estatisticos.num )'...
+            ' INNER JOIN `dodecaf`.everything '...
+            ' ON 	descritivos.num = everything.num )'...
+            ' WHERE 	everything.compositor LIKE ''Arnold%'''...
+            ' OR 	everything.compositor LIKE ''Igor%''']);
 
-        %Assign data to output variable
-        medidasR = curs.Data;
-        
-        
-        [classestimate,model]=adaboost('train',medidasR,classes,30);
-        errorAda=zeros(1,length(model)); 
-        for x=1:length(model)
-            errorAda(x)=model(x).error; 
-        end 
-        todosErros(i,qtde) = errorAda(length(errorAda));
-        
-        adaErrokFold(i,qtde) = kfoldAda(medidasR,classes);
-        
-        %Salva em arquivo      
-        fileID = fopen(arq,'a');
-        erroDeUm = char(num2str(todosErros(i,qtde)));
-        errokFold = char(num2str(adaErrokFold(i,qtde)));
-        classeResult = char(num2str(classestimate'));
-        fprintf(fileID,'====   ');
-        fprintf(fileID,queryIn);
-        fprintf(fileID,'   ====\nErro Singular: '); 
-        fprintf(fileID,erroDeUm);
-        fprintf(fileID,'\nErro com kFold: ');
-        fprintf(fileID,errokFold);
-        fprintf(fileID,'\nClasse Treinada: ');
-        fprintf(fileID,classeResult);
-        fprintf(fileID,'\n\n');
-        fclose(fileID);
+            curs = fetch(curs);
+            close(curs);
+
+            %Assign data to output variable
+            medidasR = curs.Data;
+
+
+            [classestimate,model]=adaboost('train',medidasR,classes,30);
+            errorAda=zeros(1,length(model)); 
+            for x=1:length(model)
+                errorAda(x)=model(x).error; 
+            end 
+            todosErros(i,qtde) = errorAda(length(errorAda));
+
+            adaErrokFold(i,qtde) = kfoldAda(medidasR,classes);
+
+            %Salva em arquivo      
+            fileID = fopen(arq,'a');
+            erroDeUm = char(num2str(todosErros(i,qtde)));
+            errokFold = char(num2str(adaErrokFold(i,qtde)));
+            classeResult = char(num2str(classestimate'));
+            fprintf(fileID,'====   ');
+            fprintf(fileID,queryIn);
+            fprintf(fileID,'   ====\nErro Singular: '); 
+            fprintf(fileID,erroDeUm);
+            fprintf(fileID,'\nErro com kFold: ');
+            fprintf(fileID,errokFold);
+            fprintf(fileID,'\nClasse Treinada: ');
+            fprintf(fileID,classeResult);
+            fprintf(fileID,'\n\n');
+            fclose(fileID);
+        end
     end
 end
 %Close database connection.
