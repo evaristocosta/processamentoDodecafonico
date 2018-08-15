@@ -1,4 +1,4 @@
-function info = aprendizados(opt)
+function info = aprendizados(opt, medida)
 %[erroSVM, erroOutros, supervisionadosErro, nSupervisionadosErro, adaBoostErro, erroNet, classestimate] 
 addpath('svm/');
 addpath('supervisionado/');
@@ -19,6 +19,7 @@ switch opt
         info = supervisionadosErro;
     case 2
         %Abordagem não supervisionada
+        
         fprintf('Abordagem não supervisionada\nCosseno e completo\n');
 %         nSuperChebWght = HierarquicoNS(5,4);
 %         nSuper1 = HierarquicoNS(10,3);
@@ -33,7 +34,7 @@ switch opt
 %         nSuper10 = HierarquicoNS(8,6);
 %         nSuper11 = HierarquicoNS(7,2);
 %         nSuper12 = HierarquicoNS(6,4);
-        [nSuper13 ,~,~,cSaida,~]= HierarquicoNS(6,2);
+        [nSuper13 ,~,~,cSaida,~]= HierarquicoNS(6,2, medida);
         
         %nSupervisionados = [nSuperCorrAvg ,nSuperCosAvg ,nSuperChebWght ,nSuperCitySngl];
         nSupervisionados = nSuper13;
@@ -50,18 +51,19 @@ switch opt
         %Outras abordagens
         fprintf('Abordagens gerais supervisionadas\n');
         fprintf('k-nearest neighbor & kfold | Classification tree & kfold | Naive Bayes & kfold\n');
-        erroOutros = outros();
+        erroOutros = outros(medida);
         info = erroOutros;
     case 5
         %Abordagem por Aprendizado Aglomerativo - adaptive boost
         fprintf('Abordagem por Aprendizado Aglomerativo - adaptive boost\n');
-        [datafeatures, dataclass] = medidas('new');
+        [~, dataclass] = medidas('new');
+        datafeatures = medida;
         dataclass(1:19) = -1;
         [classestimate,model]=adaboost('train',datafeatures,dataclass,30);
         errorAda=zeros(1,length(model)); for i=1:length(model), errorAda(i)=model(i).error; end 
         adaboostError = errorAda(length(errorAda));
         %Validacao cruzada 
-        adaErrokFold = kfoldAda(datafeatures, dataclass);
+        adaErrokFold = kfoldAda(datafeatures);
         adaBoostErro = [adaboostError,adaErrokFold];
         info.class = classestimate;
         info.erro = adaBoostErro;

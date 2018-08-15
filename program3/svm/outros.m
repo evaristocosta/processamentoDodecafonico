@@ -1,5 +1,5 @@
-function losses = outros()
-[medidasR, classes] = medidas();
+function losses = outros(medidasR)
+[~, classes] = medidas('new');
 rng(1);
 
 %k-nearest neighbor
