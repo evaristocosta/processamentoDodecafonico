@@ -1,6 +1,6 @@
 function M1 = zeros2inf(M)
 size = length(M);
-M1 = zeros(22);
+M1 = zeros(size);
 
 for i=1:size
    for j=1:size

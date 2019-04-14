@@ -1,6 +1,6 @@
 %SELECT `compositor`, COUNT(`compositor`) FROM `everything` GROUP BY `compositor` HAVING COUNT(`compositor`) > 5
 
-function [redes_medidas, redes_clust] = compTotal(salva)
+function [redes_medidas, redes_clust] = compTotal(salva, desenha)
 
 %Set preferences with setdbprefs.
 setdbprefs('DataReturnFormat', 'cellarray');
@@ -34,7 +34,8 @@ for i=1:length(compositores)
     q = char(39);
     nome_comp = strcat(q, nome_comp_org, q);
     
-    curs = exec(conn, ['SELECT 	everything.serie FROM `dodecaf`.everything WHERE 	everything.compositor = ' nome_comp]);
+    %curs = exec(conn, ['SELECT 	everything.serie FROM `dodecaf`.everything WHERE 	everything.compositor = ' nome_comp]);
+    curs = exec(conn, ['SELECT 	everything.serie FROM `dodecaf`.everything WHERE 	everything.compositor = ''Igor Stravinsky''']);
     curs = fetch(curs);
     close(curs);
     serie = curs.Data;
@@ -46,6 +47,11 @@ for i=1:length(compositores)
         serie_num=str2num(serie{j});
         interv = diff(serie_num);
         matriz_base = matriz_base + intervalo_matriz_total(interv);
+    end
+    
+    if desenha == 1
+        figure(i)
+        drawCircGraph(matriz_base) 
     end
     
     %Calcula as medidas da rede analizada

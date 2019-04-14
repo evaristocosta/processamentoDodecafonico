@@ -1,6 +1,6 @@
 function [M, m, diff_interv, MN, mN, diffFL, gerais, normais, m_pond, dsv_p_pond] = geraisNormais(s1)
 
-addpath('medidas/');
+%addpath('medidas/');
 
 %Vetor de intervalos
 s1I = diff(s1);
