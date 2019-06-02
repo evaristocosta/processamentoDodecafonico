@@ -1,9 +1,9 @@
-function info = aprendizados(opt, medida)
+function info = aprendizados(opt, medida,classes)
 %[erroSVM, erroOutros, supervisionadosErro, nSupervisionadosErro, adaBoostErro, erroNet, classestimate] 
-addpath('comuns/');
-addpath('supervisionado/');
-addpath('n-supervisionado/');
-addpath('adaboost/');
+%addpath('comuns/');
+%addpath('supervisionado/');
+%addpath('n-supervisionado/');
+%addpath('adaboost/');
 
 switch opt
     case 1
@@ -34,7 +34,7 @@ switch opt
 %         nSuper10 = HierarquicoNS(8,6);
 %         nSuper11 = HierarquicoNS(7,2);
 %         nSuper12 = HierarquicoNS(6,4);
-        [nSuper13 ,~,~,cSaida,~]= HierarquicoNS(6,2, medida);
+        [nSuper13 ,~,~,cSaida,~]= HierarquicoNS(6,2, medida, classes);
         
         %nSupervisionados = [nSuperCorrAvg ,nSuperCosAvg ,nSuperChebWght ,nSuperCitySngl];
         nSupervisionados = nSuper13;

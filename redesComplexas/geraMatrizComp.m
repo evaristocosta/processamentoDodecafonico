@@ -19,7 +19,7 @@ close(curs);
 %Assign data to output variable
 serie = curs.Data;
 
-comp_matrx = zeros(22);
+comp_matrx = zeros(23);
 
 for j=1:length(serie)
     serie_num=str2num(serie{j});

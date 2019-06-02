@@ -1,10 +1,10 @@
 %..algoritmo de floyd-warshall
-%..M: matriz de adjacencia, p: número de pasos
-%..ComAutoconexoes: 1 usa a diag. ppal, 0 não usa
+%..M: matriz de adjacencia, p: nï¿½mero de pasos
+%..ComAutoconexoes: 1 usa a diag. ppal, 0 nï¿½o usa
 
 function [DW,DB,DWB] = floydwarshall(M,p)
 
-%..Matriz de distâncias ponderadas.........................................
+%..Matriz de distï¿½ncias ponderadas.........................................
 [fM,cM] = size(M);
 M1 = zeros2inf(M);
 M1(1:fM+1:end) = 0;
@@ -20,11 +20,11 @@ end
 %..........................................................................
 
 
-%..Matriz de distâncias binárias...........................................
-    A = double(M~=0);  %...matriz binária
+%..Matriz de distï¿½ncias binï¿½rias...........................................
+    A = double(M~=0);  %...matriz binï¿½ria
     l = 1;             %..comprimento do caminho
 Lpath = A;             %..matriz de caminhos
-   DB = A;             %..matriz de distâncias
+   DB = A;             %..matriz de distï¿½ncias
 
 Idx = true;
 while any(Idx(:))
@@ -33,15 +33,16 @@ while any(Idx(:))
        Idx = (Lpath~=0)&(DB==0);
    DB(Idx) = l;
 end
-              DB(~DB) = inf;       %assign inf to disconnected nodes
+
+DB(~DB) = inf;       %assign inf to disconnected nodes
 DB(1:length(A)+1:end) = 0;         %clear diagonal
 %..........................................................................
 
-%..Matriz distâncias somatoria pesos/num arestas
+%..Matriz distï¿½ncias somatoria pesos/num arestas
 
-              DWB = DW./DB; %..ojo inf/inf da NaN, arrumei para Inf
-      DWB(DB==Inf)= Inf;
-  DWB(1:fM+1:end) = 0;
+DWB = DW./DB; %..ojo inf/inf da NaN, arrumei para Inf
+DWB(DB==Inf)= Inf;
+DWB(1:fM+1:end) = 0;
 %........................................................................
   
 
@@ -49,6 +50,6 @@ DB(1:length(A)+1:end) = 0;         %clear diagonal
 % for i=1:length(M1)
 %     M1(i,i) = 0;
 % end
-%..M1(1:fM+1:end) = 0; é más rápido
+%..M1(1:fM+1:end) = 0; ï¿½ mï¿½s rï¿½pido
 
 

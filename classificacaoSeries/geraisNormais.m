@@ -29,11 +29,19 @@ m_artmN = mean(s1IN);
 %Desvios padrão
 dsv_p = std(s1I);
 dsv_pN = std(s1IN);
-%Média ponderada
+
+%Média ponderada normal
 s1IR = interv2razao(s1IN);
-m_pond = sum(s1IN.*s1IR)/sum(s1IR);
-%Desvio padrão ponderado
-dsv_p_pond = sqrt(var(s1IN,s1IR));
+m_pond = sum(s1I.*s1IR)/sum(s1IR);
+%Desvio padrão ponderado normal
+dsv_p_pond = sqrt(var(s1I,s1IR));
+
+%Média ponderada normal
+s1IR = interv2razao(s1IN);
+m_pond_normal = sum(s1IN.*s1IR)/sum(s1IR);
+%Desvio padrão ponderado normal
+dsv_p_pond_normal = sqrt(var(s1IN,s1IR));
+
 %Modas, frequência e modas repetidas
 [moda, frq, othr] = mode(s1I);
 othr_rp = cell2mat(othr);

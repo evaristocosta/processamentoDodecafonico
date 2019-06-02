@@ -1,5 +1,5 @@
-%..Função que devolve o coeficiente de clustering (Coe?ciente de
-%aglomeração) para grafos direcionados (dígrafo)
+%..Funï¿½ï¿½o que devolve o coeficiente de clustering (Coe?ciente de
+%aglomeraï¿½ï¿½o) para grafos direcionados (dï¿½grafo)
 %..Entrada
 %..M: Matriz de adjacencia (Com pessos ou sem pessos(binaria))
 %..Saida
@@ -20,24 +20,24 @@ function CD = fCoeficienteClusteringRedeDirecionada(M)
 
 qW = length(find(M>1)); %..quantidade de arestas com peso >1
 
-if qW>1 %..se é uma rede ponderada
+if qW>1 %..se ï¿½ uma rede ponderada
     Wa = M.^(1/3); %..usar matriz de pessos simetrizadas
 else
     Wa = M;     %..usar matriz de adjacencia
 end
 
-   A = double(M>0); %..Matriz de adjacencia (M~=0 dá logico)
-Kout = sum(A,2);    %..grau de saída
+   A = double(M>0); %..Matriz de adjacencia (M~=0 dï¿½ logico)
+Kout = sum(A,2);    %..grau de saï¿½da
  Kin = sum(A',2);   %..grau de entrada
 Ktot = Kout + Kin;  %..grau total (in + out) 
   Kf = diag(A^2);   %..grau ao quadrado
 
   
 %...Coeficiente com todos os triplos iguais................................
-   numC = Wa + (Wa');          %..númerador de C
-numC = diag(numC^3);           %..número de triangulos direcionados 
-Ktot(numC==0) = inf;           %..se não existem triangulos faz C=0 (via Ktot=inf)
-denC = Ktot.*(Ktot-1)-2*Kf;    %..número total de possiveis triangulos 
+   numC = Wa + (Wa');          %..nï¿½merador de C
+numC = diag(numC^3);           %..nï¿½mero de triangulos direcionados 
+Ktot(numC==0) = inf;           %..se nï¿½o existem triangulos faz C=0 (via Ktot=inf)
+denC = Ktot.*(Ktot-1)-2*Kf;    %..nï¿½mero total de possiveis triangulos 
 
 C = (numC./denC)*(1/2);        %..coeficiente de clustering
 %..........................................................................

@@ -1,15 +1,16 @@
-function [accuracy,c,K,cSaida,mPA] = HierarquicoNS(dist, agr, medidasR)
+function [accuracy,c,K,cSaida,mPA] = HierarquicoNS(dist, agr, medidasR, classes)
 %Medida de dist�ncia e m�todo de agrupamento
 MDist = {'euclidean','seuclidean','cityblock','minkowski','chebychev','cosine','correlation','spearman','hamming','jaccard'};
 MAgru = {'single','complete','average','weighted','centroid','median','ward'};
 
-tamanhoClasses = [19 19]; 
+%tamanhoClasses = [19 19]; 
+tamanhoClasses = [80 67 55]; 
 numClasses = size(tamanhoClasses,2);
 
-[~, classes] = medidas('new');
+%[~, classes] = medidas('new');
 NumClasses = max(classes) + 1;
 
-[cSaida,Z,c,I,Te] = fClusteringHierarquico(medidasR,NumClasses,MDist{dist},MAgru{agr},1); %..e grafica 0 ou 1, ultimo par�metro
+[cSaida,Z,c,I,Te] = fClusteringHierarquico(medidasR,NumClasses,MDist{dist},MAgru{agr},0); %..e grafica 0 ou 1, ultimo par�metro
 CoefCophenetic(1,1) = c;
 MaxNumClasses(1,:) = fVetorClasse2VetorTamanhoClasse(cSaida);  %..tamanho de cada grupo
 [K,EQMT(1,1),nomes,PA(1,:),TamGrup(1,:),M] = fCompararClusterSaidaEntrada(classes,cSaida,numClasses); %..matriz de confus�o: Erro quadratico m�dio, nomes certos, Acc por classe, tamanho classes,amostras da matriz de confus�o,

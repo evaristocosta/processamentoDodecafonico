@@ -1,0 +1,96 @@
+% ------------------------------------
+% análise das derivadas
+sOrdem = string(ordemtotal');
+[C,ia,ic] = unique(sOrdem);
+a_counts = accumarray(ic,1);
+value_counts = [C, a_counts]
+% ------------------------------------
+
+
+
+% ------------------------------------
+% quantidade por compositor
+[length(stravinsky); length(webern); length(schoenberg); length(krenek); length(guerra); length(santoro)]
+% ------------------------------------
+
+
+
+
+% ------------------------------------
+% análise das redes de obras
+%ma
+%força
+%assortati
+%raio
+%  -- coca
+%weight clust - octave
+
+Wstravinsky = full(grafoDeOrdem(ordemstravinsky, '',0));
+Wwebern = full(grafoDeOrdem(ordemwebern, '',0));
+Wschoenberg = full(grafoDeOrdem(ordemschoenberg, '',0));
+Wkrenek = full(grafoDeOrdem(ordemkrenek, '',0));
+Wguerra = full(grafoDeOrdem(ordemguerra, '',0));
+Wsantoro = full(grafoDeOrdem(ordemsantoro, '',0));
+
+% function rede = mseletas(W)
+% [~, raio, ~, ~, ma, ~, ~, ~, ~, ~, MStot, r0] = MedidasDeRedes(W);
+% rede = [raio; ma; MStot; r0; mean(weighted_clust_coeff(W))];
+% end
+
+Rstravinsky = mseletas(Wstravinsky);
+Rwebern = mseletas(Wwebern);
+Rschoenberg = mseletas(Wschoenberg);
+Rkrenek = mseletas(Wkrenek);
+Rguerra = mseletas(Wguerra);
+Rsantoro = mseletas(Wsantoro);
+
+Rtot = [Rstravinsky Rwebern Rschoenberg Rkrenek Rguerra Rsantoro]
+% ------------------------------------
+
+
+
+% ------------------------------------
+% plot dos ROCs - enquanto roda classificador
+
+figure('Renderer', 'painters', 'Position', [10 10 420 300])
+diffscores = validationScores(:,1) - max([validationScores(:,2),validationScores(:,3)]);
+[X,Y,T,AUC1,OPTROCPT,SUBY,SUBYNAMES] = perfcurve(response,diffscores(:,1),0);
+plot(X,Y,'Color',[0 0.4470 0.7410],'LineStyle', '-', 'LineWidth',4.4)
+xlim([-.05 1.05])
+ylim([-.05 1.05])
+
+hold on
+
+diffscores = validationScores(:,2) - max([validationScores(:,1),validationScores(:,3)]);
+[X,Y,T,AUC2,OPTROCPT,SUBY,SUBYNAMES] = perfcurve(response,diffscores(:,1),1);
+plot(X,Y,'Color',[0.8500 0.3250 0.0980],'LineStyle', '--', 'LineWidth',4.4)
+xlim([-.05 1.05])
+ylim([-.05 1.05])
+
+diffscores = validationScores(:,3) - max([validationScores(:,2),validationScores(:,1)]);
+[X,Y,T,AUC3,OPTROCPT,SUBY,SUBYNAMES] = perfcurve(response,diffscores(:,1),2);
+plot(X,Y,'Color',[0.9290 0.6940 0.1250],'LineStyle', ':', 'LineWidth',4.4)
+xlim([-.05 1.05])
+ylim([-.05 1.05])
+
+line([0 1],[0 1],'Color','k','LineStyle', '--', 'LineWidth',1.5)
+
+hold off
+clipboard('copy',mean([AUC1,AUC2,AUC3]));
+
+
+% resultados do experimento
+clipboard('copy',validationAccuracy);
+clipboard('copy',response);
+clipboard('copy',validationPredictions);
+clipboard('copy',validationScores);
+
+% ------------------------------------
+
+% ------------------------------------
+% matriz de confusao
+
+confusionmat(response,validationPredictions)
+% ------------------------------------
+
+

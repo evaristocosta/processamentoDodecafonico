@@ -46,7 +46,7 @@ MSout = sum(Sout)/n;       %..for�a m�dia de sa�da
 MStot = sum(Stot)/n;       %..for�a m�dia total 
 
 %...Pearson
-r0 = assortativity(M,0);
+r0 = assortativity(M,1);
 
 VetorMedidas = [IW, raio, diametro, eficiencia, ma, MKin, MKout, MKtot, MSin, MSout, MStot, r0];
 end
