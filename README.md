@@ -1,4 +1,4 @@
-#Algoritmos para tarefas de identificação e caracterização de compositores dodecafônicos
+# Algoritmos para tarefas de identificação e caracterização de compositores dodecafônicos
 
 Neste repositório, estão vários algoritmos usados na tarefa de identificação automática e caracterização de compositores da música dodecafônica, a partir das séries de notas escolhidas para composição das obras, bem como mediante análise das séries empregadas nas músicas.
 
@@ -14,6 +14,7 @@ Para reprodutibilidade dos resultados obtidos no segundo artigo, tendo feito o d
 full(grafoDeOrdem(ordemstravinsky, '',0));
 ```
 e a aplicando como argumento na função ```mseletas(W)```;
+
 - Os plots de ROC sobrepostos podem ser executados com a seguinte sequência de comandos:
 ```
 figure('Renderer', 'painters', 'Position', [10 10 420 300])
